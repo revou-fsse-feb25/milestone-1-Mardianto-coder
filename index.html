@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Personal website showcasing my work, gallery, and contact information." />
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="grid-layout">
+    <aside class="sidebar">
+      <img src="/file milestone 1/kucing_lucu.jpeg" alt="Profile Picture" />
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#project">Project</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="content">
+      <section id="home">
+        <h2>About Me</h2>
+        <p>Hi, I'm Mardianto, a university student from Indonesia passionate about software engineering. I build simple websites and am eager to learn more.</p>
+      </section>
+
+      <section id="gallery">
+        <h2>Gallery</h2>
+        <img src="/file milestone 1/Gallery/goku.jpg" alt="goku" />
+      </section>
+
+      <section id="project">
+        <h2>Project</h2>
+        <p>Sorry, no projects to show right now.</p>
+      </section>
+    </main>
+
+    <aside class="sidebar-right">
+      <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="/submit" method="post" class="contact-form">
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required placeholder="Your name" />
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required placeholder="Your email" />
+          </div>
+          <div class="form-group">
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" rows="5" required placeholder="Message"></textarea>
+          </div>
+          <button type="submit" class="btn-submit">Send</button>
+        </form>
+
+        <div class="contact-info">
+          <h3>Other Ways</h3>
+          <ul>
+            <li><strong>Phone:</strong> (62)8123456789</li>
+            <li><strong>Email:</strong> <a href="mailto:dwi.da174@gmail.com">dwi.da174@gmail.com</a></li>
+            <li><strong>Location:</strong> Sulawesi, Indonesia</li>
+          </ul>
+        </div>
+      </section>
+    </aside>
+  </div>
+
+  <footer>
+    <p>&copy; My first website project</p>
+  </footer>
+<script src="script.js"></script>
+</body>
+</html>
